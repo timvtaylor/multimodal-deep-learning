@@ -1,1 +1,3 @@
-TBD
+In this project, I implement ResNet18 in PyTorch from scratch with modifications to allow for two modalities of data inputs - an X-Ray image as well as tabular patient data. The CNN-extracted features are concatenated with the patient data, and processed through a final sequence of linear layers. I used BCEWithLogits loss to handle the multilabel classification task.
+
+The model achieved 83% classification accuracy after training for 5 epochs - if resources allow, performance could probably be further improved with more training. Admittedly, transfer learning using a pretrained model for X-Ray image classification would lead to better results from a competition standpoint, but the main point of this project was to familiarize myself with the revolutionary architecture of ResNet18 (i.e. the skip connections) and practice implementating network architectures as described in papers.
